@@ -4,7 +4,7 @@ env:
   es2020: true
 
 extends:
-  - 'airbnb-base'
+  - 'standard'
 
 parserOptions:
   ecmaVersion: 11
