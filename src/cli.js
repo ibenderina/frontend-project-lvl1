@@ -4,24 +4,24 @@ const TEXT = {
   YES: 'yes',
   NO: 'no',
   CORRECT: 'Correct!'
-};
+}
 
-const arrayAnswers = [TEXT.NO, TEXT.YES];
+const arrayAnswers = [TEXT.NO, TEXT.YES]
 
-const number = 10;
+const number = 10
 
 const getBoolean = (string) => {
-  return string.toLowerCase() === TEXT.YES;
+  return string.toLowerCase() === TEXT.YES
 }
 
 const getCorrectAnswer = (num, answer) => {
-  const number = !(num % 2);
-  return number === answer;
+  const number = !(num % 2)
+  return number === answer
 }
 
 const isCorrect = (number, userAnswer) => {
-  const answer = getBoolean(userAnswer);
-  return getCorrectAnswer(number, answer);
+  const answer = getBoolean(userAnswer)
+  return getCorrectAnswer(number, answer)
 }
 
 export default () => {
